@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>Sprint 1</title>
+	</head>
+	<body>
+		Enter Python to execute:
+		<form action="/" method="post">
+			<input type="text" name="expression" />
+			<input type="submit" value="Execute" />
+		</form>
+		{% with messages = get_flashed_messages() %}
+			{% if messages %}
+				Results:
+				<pre>
+					{% for message in messages %}
+					"Hello"
+{{message}}
+					{% endfor %}
+				</pre>
+			{% endif %}
+		{% endwith %}
+	</body>
+</html>
