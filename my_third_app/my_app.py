@@ -5,6 +5,7 @@ import flask
 import settings
 
 # Views
+from index import Index
 from contact import Contact
 from about import About
 from main import Main
@@ -24,6 +25,9 @@ app.add_url_rule('/about/',
                  methods=["GET"])
 app.add_url_rule('/contact/',
                  view_func=Contact.as_view('contact'),
+                 methods=["GET"])
+app.add_url_rule('/index/',
+                 view_func=Index.as_view('index'),
                  methods=["GET"])
 app.add_url_rule('/<page>/',
                  view_func=Main.as_view('main'),
