@@ -1,0 +1,5 @@
+{% extends "my_base.html" %}
+{% block body %}
+    <h1>Contact</h1>
+    <p>Not sure if you can contact me.</p>
+{% endblock %}

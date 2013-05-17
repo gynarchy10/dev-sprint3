@@ -1,0 +1,5 @@
+{% extends "my_base.html" %}
+{% block body %}
+    <h1>Page not found!</h1>
+    <p>Sorry you made a booboo. Sadness... </p>
+{% endblock %}
